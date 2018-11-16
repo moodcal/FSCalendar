@@ -314,6 +314,14 @@ IB_DESIGNABLE
 @property (readonly, nonatomic) UILongPressGestureRecognizer *swipeToChooseGesture;
 
 /**
+Difference the tap or hold gesture date selection
+When the value = YES is a UILongPressGestureRecognizer
+When the value = NO is a tap selection
+*/
+
+@property (readonly, nonatomic) BOOL isLongPressGesture;
+
+/**
  * The placeholder type of FSCalendar. Default is FSCalendarPlaceholderTypeFillSixRows.
  *
  * e.g. To hide all placeholder of the calendar
